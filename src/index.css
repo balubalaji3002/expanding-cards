@@ -14,7 +14,7 @@
 }
 
 #img-3 {
-    background-image: url("../assests/img3.jpg");
+    background-image: url("../assests/img5.jpg");
 }
 
 #img-4 {
@@ -22,13 +22,13 @@
 }
 
 #img-5 {
-    background-image: url("../assests/img5.jpg");
+    background-image: url("../assests/img3.jpg");
 }
 
 body {
+    background-color: aquamarine;
     font-family: "Muli", sans-serif;
     display: flex;
-    background-color: black;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -53,7 +53,7 @@ body {
     flex: 0.5;
     margin: 10px;
     position: relative;
-    transition: flex 0.7s ease-in;
+    transition: flex 7s ease-in;
 }
 
 .panel h3 {
@@ -71,10 +71,10 @@ body {
 
 .panel.active h3 {
     opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
+    transition: opacity 10s ease-in 11s;
 }
 
-@media (max-width: 480px) {
+@media (max-width:720px) {
     .container {
         width: 100vw;
     }
