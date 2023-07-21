@@ -1,11 +1,70 @@
 body {
-    font-family: joker;
+    background-color: aquamarine;
     display: flex;
-    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
 }
 
-.column {
-    flex: 33.33%;
-    padding: 10px;
+#img-1 {
+    background-image: url("../assests/img1.jpg");
+}
+
+#img-2 {
+    background-image: url("../assests/img2.jpg");
+}
+
+#img-3 {
+    background-image: url("../assests/img5.jpg");
+}
+
+#img-4 {
+    background-image: url("../assests/img4.jpg");
+}
+
+#img-5 {
+    background-image: url("../assests/img3.jpg");
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: aliceblue;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition-property: all;
+    transition-duration: 1ms;
+
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: flex 3s ease-in 5s;
 }
